@@ -10,7 +10,7 @@
      quitButton = new QPushButton(tr("&Quit"));
 
      udpSocket = new QUdpSocket(this);
-     udpSocket->bind(45454);
+     udpSocket->bind(QHostAddress("192.168.0.9"),45454);
 
      connect(udpSocket, SIGNAL(readyRead()),
              this, SLOT(processPendingDatagrams()));
