@@ -14,14 +14,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        client.cpp \
-    settings.cpp
+        client.cpp
 
-HEADERS  += client.h \
-    settings.h
+HEADERS  += client.h
 
-FORMS    += client.ui \
-    settings.ui
+FORMS    += client.ui
 
  # install
  target.path = $$[QT_INSTALL_EXAMPLES]/network/broadcastsender

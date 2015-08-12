@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>200</width>
+    <height>200</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -25,23 +25,7 @@
      <layout class="QGridLayout" name="gridLayout_3">
       <item row="0" column="0">
        <layout class="QGridLayout" name="gridLayout">
-        <item row="0" column="0">
-         <widget class="QTextEdit" name="textEdit">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="undoRedoEnabled">
-           <bool>true</bool>
-          </property>
-          <property name="acceptRichText">
-           <bool>true</bool>
-          </property>
-          <property name="textInteractionFlags">
-           <set>Qt::TextEditorInteraction</set>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
+        <item row="0" column="1">
          <spacer name="verticalSpacer">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
@@ -57,8 +41,15 @@
           </property>
          </spacer>
         </item>
-        <item row="2" column="0">
+        <item row="1" column="1">
          <widget class="QLineEdit" name="Message_lineEdit"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Message:</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -120,7 +111,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>200</width>
      <height>21</height>
     </rect>
    </property>
@@ -128,7 +119,6 @@
     <property name="title">
      <string>File</string>
     </property>
-    <addaction name="actionSettings"/>
     <addaction name="separator"/>
     <addaction name="actionExit"/>
    </widget>
@@ -143,11 +133,6 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="actionSettings">
-   <property name="text">
-    <string>Settings</string>
-   </property>
-  </action>
   <action name="actionExit">
    <property name="text">
     <string>Exit</string>

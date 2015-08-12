@@ -30,7 +30,6 @@ private slots:
 
 private:
     Ui::Client *ui;
-    Settings * formSettings;
     QUdpSocket *udpSocket;
     QTimer *timer;
     int messageNo;

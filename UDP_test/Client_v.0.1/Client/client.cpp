@@ -1,13 +1,14 @@
 #include <QtNetwork>
 #include <QString>
 #include "client.h"
+#include "settings.h"
 #include "ui_client.h"
+
 Client::Client(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Client)
 {
     ui->setupUi(this);
-    formSettings = new Settings(this);
 
     udpSocket = new QUdpSocket(this);
     udpSocket -> bind(QHostAddress("192.168.0.9"),45454);
@@ -23,11 +24,6 @@ Client::~Client()
     delete ui;
 }
 
-void Client::on_actionSettings_triggered()
-{
-
-    formSettings->show();
-}
 
 void Client::on_actionExit_triggered()
 {
@@ -43,6 +39,6 @@ void Client::broadcastDatagram()
     //QByteArray datagram = "Broadcast message " + QByteArray::number(messageNo);
     QByteArray datagram = ba + QByteArray::number(messageNo);
     udpSocket->writeDatagram(datagram.data(), datagram.size(),
-                             QHostAddress("192.168.0.9"),45454);
+                             QHostAddress("192.168.0.6"),45454);
     ++messageNo;
 }
