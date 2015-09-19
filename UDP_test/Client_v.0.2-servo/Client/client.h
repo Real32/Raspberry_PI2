@@ -28,15 +28,17 @@ private slots:
 
     void broadcastDatagram();
 
-    void on_ON_pushButton_clicked();
+    void on_RCoxa_horizontalSlider_valueChanged(int value);
 
-    void on_OFF_pushButton_clicked();
+    void on_RFermur_dial_valueChanged(int value);
+
+    void on_RTibia_dial_valueChanged(int value);
 
 private:
     Ui::Client *ui;
     QUdpSocket *udpSocket;
     QTimer *timer;
-    int messageNo;
+    int broadcast_value;
 };
 
 #endif // CLIENT_H

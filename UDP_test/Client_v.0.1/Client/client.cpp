@@ -34,11 +34,27 @@ void Client::on_actionExit_triggered()
 void Client::broadcastDatagram()
 {
     const QString Message = ui->Message_lineEdit->text();
-    QByteArray ba = Message.toLocal8Bit();
+    QByteArray BroadcastMessage = Message.toLocal8Bit();
     ui->statusBar->showMessage(tr("Now broadcasting datagram %1").arg(messageNo));
     //QByteArray datagram = "Broadcast message " + QByteArray::number(messageNo);
-    QByteArray datagram = ba + QByteArray::number(messageNo);
-    udpSocket->writeDatagram(datagram.data(), datagram.size(),
-                             QHostAddress("192.168.0.6"),45454);
+    QByteArray datagram = BroadcastMessage/* + QByteArray::number(messageNo)*/;
+    udpSocket->writeDatagram(datagram.data(), datagram.size(), QHostAddress("192.168.0.11"),45454);
     ++messageNo;
+}
+
+void Client::on_ON_pushButton_clicked()
+{
+    const QString one = "1";
+    QByteArray one_message = one.toLocal8Bit();
+    QByteArray datagram = one_message;
+    udpSocket->writeDatagram(datagram.data(), datagram.size(), QHostAddress("192.168.0.11"),45454);
+
+}
+
+void Client::on_OFF_pushButton_clicked()
+{
+    const QString zero = "0";
+    QByteArray zero_message = zero.toLocal8Bit();
+    QByteArray datagram = zero_message;
+    udpSocket->writeDatagram(datagram.data(), datagram.size(), QHostAddress("192.168.0.11"),45454);
 }
