@@ -2,7 +2,7 @@
 #define CLIENT_H
 
 #include <QMainWindow>
-#include <QTcpSocket>
+#include <QUdpSocket>
 
 #include <settings.h>
 
@@ -10,7 +10,7 @@ namespace Ui {
 class Client;
 }
 
-class QUdpSocket;
+//class QUdpSocket;
 class QTimer;
 
 class Client : public QMainWindow

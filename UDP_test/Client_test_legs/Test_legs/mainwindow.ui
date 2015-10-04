@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_8">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="L1groupBox">
+      <property name="title">
+       <string>Left 1</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QDial" name="L1_coxa_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 0, 0);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDial" name="L1_fermur_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 170, 0);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QDial" name="L1_tibia_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 85, 255);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="L1_coxa_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="L1_fermur_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="L1_tibia_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QGroupBox" name="R1groupBox">
+      <property name="title">
+       <string>Right 1</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <widget class="QDial" name="R1_coxa_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 0, 0);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDial" name="R1_fermur_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 170, 0);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QDial" name="R1_tibia_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 85, 255);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="R1_coxa_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="R1_fermur_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="R1_tibia_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="L2groupBox">
+      <property name="title">
+       <string>Left 2</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QDial" name="L2_coxa_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 0, 0);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDial" name="L2_fermur_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 170, 0);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QDial" name="L2_tibia_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 85, 255);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="L2_coxa_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="L2_fermur_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="L2_tibia_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QGroupBox" name="R2groupBox">
+      <property name="title">
+       <string>Right 2</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <widget class="QDial" name="R2_coxa_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 0, 0);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDial" name="R2_fermur_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 170, 0);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QDial" name="R2_tibia_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 85, 255);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="R2_coxa_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="R2_fermur_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="R2_tibia_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="2" rowspan="2">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QSlider" name="Height_label">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="maximum">
+         <number>25</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Height</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <widget class="QGroupBox" name="L3groupBox">
+      <property name="title">
+       <string>Left 3</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <widget class="QDial" name="L3_coxa_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 0, 0);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDial" name="L3_fermur_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 170, 0);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QDial" name="L3_tibia_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 85, 255);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="L3_coxa_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="L3_fermur_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="L3_tibia_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QGroupBox" name="R3groupBox">
+      <property name="title">
+       <string>Right 3</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QDial" name="R3_coxa_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 0, 0);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDial" name="R3_fermur_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 170, 0);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QDial" name="R3_tibia_dial">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 85, 255);</string>
+         </property>
+         <property name="maximum">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="R3_coxa_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="R3_fermur_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="R3_tibia_label">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>650</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
