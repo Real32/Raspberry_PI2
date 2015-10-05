@@ -10,6 +10,29 @@
 #include <QMessageBox>
 #include <QGridLayout>
 
+#define  L1coxa 0;
+#define  L1fermur 2;
+#define  L1tibia 3;
+
+#define  L2coxa 21;
+#define  L2fermur 22;
+#define  L2tibia 23;
+
+#define  L3coxa 24;
+#define  L3fermur 25;
+#define  L3tibia 26;
+
+#define  R1coxa 7;
+#define  R1fermur 1;
+#define  R1tibia 4;
+
+#define  R2coxa 5;
+#define  R2fermur 6;
+#define  R2tibia 10;
+
+#define  R3coxa 27;
+#define  R3fermur 28;
+#define  R3tibia 29;
 
  class QLabel;
  class QPushButton;

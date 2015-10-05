@@ -36,7 +36,10 @@ MainWindow::MainWindow(QWidget *parent) :
 
     connect(ui->Height_label, SIGNAL(valueChanged(int)), this, SLOT(broadcastDatagram()));
     // connect(ui->RCoxa_horizontalSlider, SIGNAL(valueChanged(int)), this, SLOT(broadcastDatagram()));
+
     datagram.resize(20);
+for(int i=0; i<20; i++)
+    datagram[i]=0;
 }
 
 
