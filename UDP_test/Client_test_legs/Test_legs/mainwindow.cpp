@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     udpSocket = new QUdpSocket(this);
-    udpSocket -> bind(QHostAddress(/*"192.168.0.9"*/"127.0.0.1"),45454);
+    udpSocket -> bind(QHostAddress("10.0.0.52"/*"127.0.0.1"*/),45454);
 
     connect(ui->L1_coxa_dial, SIGNAL(valueChanged(int)), this, SLOT(broadcastDatagram()));
     connect(ui->L1_fermur_dial, SIGNAL(valueChanged(int)), this, SLOT(broadcastDatagram()));
@@ -46,7 +46,7 @@ for(int i=0; i<20; i++)
 void MainWindow::broadcastDatagram()
 {
     //ui->statusBar->showMessage(tr("Now broadcasting datagram %1").arg(broadcast_value));
-    udpSocket->writeDatagram(datagram.data(), datagram.size(), QHostAddress(/*"192.168.0.9"*/ "127.0.0.1"),45454);
+    udpSocket->writeDatagram(datagram.data(), datagram.size(), QHostAddress("10.0.0.4"/* "127.0.0.1"*/),45454);
     ui->statusBar->showMessage(datagram.data());
 }
 

@@ -11,7 +11,7 @@ Client::Client(QWidget *parent) :
     ui->setupUi(this);
 
     udpSocket = new QUdpSocket(this);
-    udpSocket -> bind(QHostAddress("192.168.0.9"),45454);
+    udpSocket -> bind(QHostAddress("192.168.0.2"),45454);
     broadcast_value = 0;
 
   //  connect(ui->SendButton, SIGNAL(clicked()), this, SLOT(broadcastDatagram()));
@@ -38,7 +38,7 @@ void Client::broadcastDatagram()
     ui->statusBar->showMessage(tr("Now broadcasting datagram %1").arg(broadcast_value));
     //QByteArray datagram = "Broadcast message " + QByteArray::number(messageNo);
     QByteArray datagram = /*BroadcastMessage  + */QByteArray::number(broadcast_value);
-    udpSocket->writeDatagram(datagram.data(), datagram.size(), QHostAddress("192.168.0.9"),45454);
+    udpSocket->writeDatagram(datagram.data(), datagram.size(), QHostAddress("192.168.0.4"),45454);
     ++broadcast_value;
 }
 /*
@@ -62,7 +62,7 @@ void Client::on_RCoxa_horizontalSlider_valueChanged(int value)
     datagram[0]='4';
     datagram[1]='C';
     datagram[2]=value;
-    udpSocket->writeDatagram(datagram.data(), datagram.size(), QHostAddress("192.168.0.9"),45454);
+    udpSocket->writeDatagram(datagram.data(), datagram.size(), QHostAddress("192.168.0.4"),45454);
     ui->statusBar->showMessage(tr("Now broadcasting datagram %1").arg(broadcast_value));
 }
 
